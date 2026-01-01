@@ -1,21 +1,66 @@
-<<<<<<< HEAD
-# SPLYT
-SECOND ONE REACT+GSAP
-=======
-# React + Vite
+# ✨ SPLYT — Awwwards-Style Interactive Web Experience
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Project Banner](/public/images/hero-banner.png)
 
-Currently, two official plugins are available:
+A showcase project demonstrating how to build an **Awwwards-level website** using **React, Tailwind CSS, and GSAP (GreenSock)** — packed with smooth scrolling, clip-path transitions, parallax effects, and immersive animations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📋 Table of Contents
+- 🚀 Introduction  
+- ⚙️ Tech Stack  
+- ✨ Features  
+- 🤸 Quick Start  
+- 🕸️ Project Structure  
+- 🔗 Assets  
+- 🌐 Community  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Introduction
+SPLYT is built to **inspire award-winning UI experiences**.  
+This project combines **GSAP’s animation power**, **React 19 component architecture**, and **Tailwind 4 utility styling** to create buttery-smooth scroll effects, dynamic reveals, and visually striking transitions designed for recognition like **Awwwards Site of the Day**.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> c509f86 (First Commit completed hero section with animations)
+---
+
+## ⚙️ Tech Stack
+- ⚛ **React 19**
+- 🌀 **Tailwind CSS v4**
+- 🎞 **GSAP (GreenSock Animation Platform)**
+  - ScrollTrigger
+  - ScrollSmoother
+  - Timelines
+  - Clip-Path Animations
+- 🚀 **Vite (Fast dev bundler)**
+
+---
+
+## ✨ Features
+You’ll see and learn patterns for:
+
+- ✨ Parallax & depth effects
+- ⚡ Clip-path transitions that *pop*
+- 🕹 ScrollTrigger + ScrollSmoother control
+- 😉 Pinning sections with style
+- 👏 Text reveals like Awwwards pros
+- 🎞 GSAP timelines that feel premium
+- 📱 Fully responsive, mobile-first UI
+- 🖼 Optimized asset handling (images, fonts, SVGs)
+
+---
+
+## 🤸 Quick Start
+
+```sh
+# 1. Clone the repo
+git clone https://github.com/casanova259/SPLYT.git
+
+# 2. Install dependencies
+npm install
+# or
+yarn
+
+# 3. Start the dev server
+npm run dev
+# or
+yarn dev
