@@ -14,7 +14,7 @@ const Hero = () => {
         //splittext lets us breakdowen thew text into weords chars to animate them
 
         //now lets create a timline
-        const tl = gsap.timeline({ delay: 1 });
+        const tl = gsap.timeline({ delay: 0.5});
 
         //now make the element animate
         tl.to(".hero-content", {

@@ -69,6 +69,8 @@ const Message = () => {
             scrollTrigger:{
                 trigger:".message-content p",
                 start:"top center",
+                // toggleActions: "play none none reverse"
+
                 //  markers:true
             }
         })
