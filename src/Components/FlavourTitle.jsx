@@ -21,7 +21,7 @@ const FlavourTitle = () => {
       scrollTrigger:{
         trigger:".flavor-section",
         start:"top 30%",
-        toggleActions:"play none none reverse"
+        // toggleActions:"play none none reverse"
 
       }
     })
@@ -34,8 +34,8 @@ const FlavourTitle = () => {
       scrollTrigger:{
         trigger:".flavor-section",
         start:"top 10%",
-        toggleActions:"play none none reverse"
-
+      // toggleActions:"play none none reverse",
+        // scrub:true 
         // markers:true
       }
     });
@@ -49,13 +49,15 @@ const FlavourTitle = () => {
       scrollTrigger:{
         trigger:".flavor-section",
         start:"top 1%",
-        toggleActions:"play none none reverse"
+        // toggleActions:"play none none reverse"
         // markers:true
       }
     })
+
+  
   })
   return (
-    <div className="general-title col-center h-full 2xl:gap-32 xl:gap-24 gap-16">
+    <div className="general-title col-center h-full  2xl:gap-32 xl:gap-24 gap-16 ">
       <div className="overflow-hidden 2xl:py-0 py-3 first-text-split">
         <h1>WE have 6</h1>
       </div>
