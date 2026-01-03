@@ -89,4 +89,4 @@ const cards = [
   },
 ];
 
-export { flavorlists, nutrientLists, cards };
+export  { flavorlists, nutrientLists, cards };
