@@ -119,3 +119,6 @@ const Hero = () => {
 }
 
 export default Hero
+
+
+/* The wEbsite is finally completed 3 45pm 4 january 2026 */
