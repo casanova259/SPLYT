@@ -1,8 +1,16 @@
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap/all"
 import { SplitText } from "gsap/all"
+import { useMediaQuery } from "react-responsive"
 
 const Hero = () => {
+
+    const isMobile = useMediaQuery({
+        query: "(max-width:768px)",
+    })
+    const isTablet = useMediaQuery({
+        query: "max-width:1024px"
+    })
 
 
     //let's see now
@@ -14,7 +22,7 @@ const Hero = () => {
         //splittext lets us breakdowen thew text into weords chars to animate them
 
         //now lets create a timline
-        const tl = gsap.timeline({ delay: 0.5});
+        const tl = gsap.timeline({ delay: 0.5 });
 
         //now make the element animate
         tl.to(".hero-content", {
@@ -45,21 +53,41 @@ const Hero = () => {
         });
 
         //now after creating the timeline
-        HeroTl.to(".hero-container",{
-            rotate:5,
-            scale:0.9,
-            yPercent:30,
-            ease:"power1.inOut"
+        HeroTl.to(".hero-container", {
+            rotate: 5,
+            scale: 0.9,
+            yPercent: 30,
+            ease: "power1.inOut"
         });
     })
     return (
         <section className="bg-main-bg">
             {/* this is the parent container whcih will store everything */}
             <div className="hero-container">
-                <img src="images/static-img.png" alt="hero-img"
-                    className="absolute bottom-0 left-1/2 -translate-x-1/2 object-auto scale-100 md:scale-150"
-                //this is the way to center the items in the absolute position
-                />
+
+
+                {isTablet ? (
+                    <>
+                        {isMobile && (
+                            <img
+                                src="/images/hero-bg.png"
+                                className="absolute bottom-40 size-full object-cover"
+                            />
+                        )}
+                        <img
+                            src="/images/hero-img.png"
+                            className="absolute bottom-0 left-1/2 -translate-x-1/2 object-auto"
+                        />
+                    </>
+                ) : (
+                    <video
+                        src="/videos/hero-bg.mp4"
+                        autoPlay
+                        muted
+                        playsInline
+                        className="absolute inset-0 w-full h-full object-cover"
+                    />
+                )}
 
                 <div className="hero-content">
                     {/* THis div will hgave all the ocntent that we would animate like te clip animation the text animationa nd all of that
