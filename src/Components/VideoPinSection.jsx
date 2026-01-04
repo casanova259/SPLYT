@@ -18,7 +18,7 @@ const VideoPinSection = () => {
                 start:"-15% top",//the animation starts when the 15 % of the element hits the viewport top
                 end:"200% top",
                 scrub:1.5,
-                markers:true,
+                // markers:true,
                 pin:true,//pins the element in the place
             }
         })
